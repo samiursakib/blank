@@ -3,7 +3,7 @@ const http = require('http');
 
 const app = express();
 
-app.get((req, res) => {
+app.get('/', (req, res) => {
   res.send({ title: 'get request at root' });
 });
 const server = http.createServer(app);
